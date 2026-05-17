@@ -1,0 +1,6 @@
+# Ignore folder
+.vscode/
+SysC_Core/bin/
+SysC_Core/build/
+
+# Ignore file
