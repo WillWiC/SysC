@@ -17,16 +17,9 @@ Monitor Usage: CPU, GPU & RAM
 Monitor Temperature: CPU, GPU  
 Advance Monitoring: Each Processor CPU/GPU + RAM Usage  
 
-## Obstacle 
-Monitor temperature does not exist in standard windows api.  
-There is 3 Method to Solve this:  
-1. Query WMI (Windows Management Instrumentation)
-2. Hardware-sdk  # Nvidia - NVAPI (C-based SDK)  | Intel - Intel PCM (C++-based SDK)  |  LibreHardwareMonitor (dotnet C# based)
-3. The "Raw" C Way (MSRs + WinRing0)  
-
 ## Core Project Roadmap
-Phase 1: Prove of Concept  
-- Develop the backend and use console/terminal to showcase whether it will works or not.
+Phase 1: Prove of Concept (Back-end Prototype)
+- Develop the backend and use console/terminal to showcase whether it will works or not.  
 - Backend: C, Win32 API, PDH (Performance Data Helper)  
   
 Phase 2: Bridge (API)
@@ -35,9 +28,20 @@ Phase 2: Bridge (API)
 Phase 3: Front-end (C#)
 - Utilize framework library (Avalonia UI) to create a native front-end desktop application.
 
-## Additional Feature (Future Roadmap)  
-|     Name                   |     Priority       |
-| -------------------------- | ------------------ |
-| Disk Usage                 |        Yes         |
-| Networking Usage           |        Yes         |
-| Resource Usage Breakdown   |        Maybe       |
+## Project Phase  
+
+| Phase  | Deliverable       | Learning Goals                   |
+| -----  | -----------       | --------------                   | 
+| Phase 1| Console Monitor   | Win32 API, PDH, Memory Management|
+| Phase 2| Process Monitor   | Processes, Handles, Permissions  |
+| Phase 3| Sampling Monitor  | Threads, Mutexes, Synchronization|
+| Phase 4| DLL Bridge        | ABI, Linking, Interop            |
+| Phase 5| Avalonia UI       | C# Interop, Architecture         |
+| Phase 6| Advanced Sensors  | WMI, Hardware APIs               |
+
+
+## Additional Roadmap
+> This is just to sketch out whether if I want to do or not.
+1. Cross-OS Compability (MacOs, Windows, Linux)  
+2. Network Monitoring  
+3. Disk Usage (Read, Write)
