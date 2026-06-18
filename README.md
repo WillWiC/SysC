@@ -19,14 +19,14 @@ Monitor Temperature: CPU, GPU
 Advanced Monitoring: Each Processor CPU/GPU + RAM Usage  
 
 ## Core Project Roadmap
-Phase 1: Prove of Concept (Back-end Prototype)
+Phase 1: Prove of Concept (Back-end Prototype)  
 - Develop the backend and use console/terminal to showcase whether it works or not.  
 - Backend: C, Win32 API, PDH (Performance Data Helper)  
   
 Phase 2: Bridge (API)
 - Compile the backend into a dll file so that the front-end can interact and call the required function to showcase the feature.
 
-Phase 3: Front-end (C#)
+Phase 3: Application Prototype (C#)
 - Utilize framework library (Avalonia UI) to create a native front-end desktop application.
 
 ## Project Phase  
@@ -45,4 +45,4 @@ Phase 3: Front-end (C#)
 > This is just to sketch out whether if I want to do or not.
 1. Cross-OS Compatibility (MacOs, Windows, Linux)  
 2. Network Monitoring  
-3. Disk Usage (Read, Write)
+3. Disk Usage (Read, Write)  
